@@ -1,7 +1,4 @@
----
-dg-publish: true
----
-# Latent Bodies — Student Setup Guide
+﻿# Latent Bodies — Student Setup Guide
 
 Welcome! This guide will walk you through getting ComfyUI running before our first session. Read through the whole thing before starting so you understand what path is right for you.
 
@@ -99,7 +96,7 @@ This is your signal that ComfyUI is ready. Do not try to connect before this lin
 - ComfyUI will open in your browser in a new tab
 
 **7. Terminate your pod when done**
-When you finish a session, go back to RunPod and click **"Terminate"** on your pod. This deletes the pod and stops all billing immediately. Your files are safe — everything in `/workspace` is on your Network Volume, which is not affected by termination.
+When you finish a session, go back to RunPod and click **"Terminate"** on your pod. This deletes the pod and stops all billing immediately. Your files are safe — everything in `/workspace` is on your Network Volume, which is not affected by termination. 
 
 Next time you connect: repeat from step 4. Your volume will be there, with all your models and files intact.
 
@@ -157,12 +154,12 @@ ComfyUI's folder structure is the same whether you are running locally or on Run
 ```
 ComfyUI/
   models/
-    checkpoints/    <- base model (.safetensors)
-    loras/          <- LoRA files (.safetensors)
-    controlnet/     <- ControlNet models
-  custom_nodes/     <- installed via Manager
-  input/            <- images you want to use as inputs
-  output/           <- generated images are saved here
+    checkpoints/    ← base model (.safetensors)
+    loras/          ← LoRA files (.safetensors)
+    controlnet/     ← ControlNet models
+  custom_nodes/     ← installed via Manager
+  input/            ← images you want to use as inputs
+  output/           ← generated images are saved here
 ```
 
 ### Cloud (RunPod)
@@ -177,7 +174,7 @@ Open Windows Explorer and navigate to your `ComfyUI_windows_portable\ComfyUI\` f
 
 ## Step 2: Download the Class Model
 
-We will use a specific SD 1.5 checkpoint for the course.
+We will use a specific SD 1.5 checkpoint for the course. 
 
 ### Cloud (RunPod)
 - In the RunPod right panel, click the **"Connect"** tab
@@ -203,7 +200,7 @@ Note: After adding any file to your ComfyUI installation, click the browser's **
 We use a specific set of tools pinned to versions that work together reliably. Instead of installing nodes one by one, you will restore a "snapshot" that installs everything at once.
 
 **1. Download the class snapshot file**
-- For week 1 setup and testing, you will use a simple text-to-image workflow.
+- For week 1 setup and testing, you will use a simple text-to-image workflow. 
 	Download it here: [Latent-Bodies_Snapshot-1_Text-to-Image](https://github.com/akajesstucker/Latent-Bodies-Assets/raw/refs/heads/main/Latent-Bodies_Snapshot-1_Text-to-Image.json)
 	(click download icon at the top right of the page, or press `ctrl + shift + s` on keyboard)
 
@@ -227,10 +224,9 @@ If you don't see it already after loading the snapshot, [download the workflow .
 
 You don't have to put this in a ComfyUI subfolder, but save it somewhere that makes sense for you (i.e. a Latent Bodies class folder).
 
-Drag and drop the file into the ComfyUI interface.
+Drag and drop the file into the ComfyUI interface. 
 You should see a workflow appear like below:
-
-![Workflow 1 - Text to Image](/img/workflow-1-text-to-image.png)
+![_Latent-Bodies_Workflow-1_Text-to-Image - ComfyUI — Mozilla Firefox 3_29_2026 8_09_34 PM.png](/img/latent-bodies-workflow-1-text-to-image-comfyui-mozilla-firefox-3-29-2026-8-09-34-pm.png)
 
 **2. Run a generation**
 Click "Run". You should see progress in the terminal and an image appear in ComfyUI in the final "Save Image" node within 20–60 seconds depending on your GPU.
@@ -240,9 +236,10 @@ Generate a few images using the prompts loaded into the sample workflow (Positiv
 
 **4. Check Output Images**
 Your files will save automatically to the 'Output' subfolder of your ComfyUI directory.
-RunPod Users: navigate to the output folder in the Jupyter page and you can download them to your own computer.
+RunPod Users: navigate to the output folder in the Jupyter page and you can download them to your own computer. 
 
 Share a few of your generated images to the class discord and feel free to discuss your findings there. We will follow up in class next week!
+
 
 ---
 

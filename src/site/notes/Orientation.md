@@ -1,7 +1,3 @@
----
-dg-publish: true
-dg-home: true
----
 # Latent Bodies — Student Orientation
 
 Welcome to **Latent Bodies**. This document covers a general overview of the course: who we are, how the course works, where things happen, and what you need to set up.
@@ -17,7 +13,7 @@ The course evolved from two previous editions of "Mediated Bodies" at School of 
 **Instructor:** Jess
 **Facilitated by:** School of Machines (Rachel Uwa)
 
-For the full course description, objectives, context, and week-by-week outline, see the [[Syllabus]].
+For the full course description, objectives, context, and week-by-week outline, see the [Syllabus](Syllabus.md).
 
 ---
 
@@ -78,7 +74,7 @@ Each week has a **student lesson plan** published here on the course site. It co
 
 You will need **ComfyUI** running before **Week 2**. You do not need it ready for the first session.
 
-See the full setup guide: [[setup-guide]]
+See the full setup guide: [Setup Guide](setup-guide.md)
 
 In brief, there are two paths:
 
@@ -101,3 +97,6 @@ Over the five weeks you will:
 3. Use **ControlNet** to drive image generation from video of your own body
 4. Train a **LoRA** on images of your own face or body — a small custom model that ComfyUI loads alongside the base model
 5. Combine these tools to produce a short final project: still and/or moving image work
+
+---
+
