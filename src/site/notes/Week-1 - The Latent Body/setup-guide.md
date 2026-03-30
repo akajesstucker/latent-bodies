@@ -205,7 +205,7 @@ We use a specific set of tools pinned to versions that work together reliably. I
 
 **1. Download the class snapshot file**
 - For week 1 setup and testing, you will use a simple text-to-image workflow. 
-	Download it here: [Latent-Bodies_Snapshot-1_Text-to-Image](https://github.com/akajesstucker/Latent-Bodies-Assets/raw/refs/heads/main/Latent-Bodies_Snapshot-1_Text-to-Image.json)
+	Download it here: [Latent-Bodies_Snapshot-1_Text-to-Image](https://github.com/akajesstucker/latent-bodies/blob/main/Latent-Bodies_Snapshot-1_Text-to-Image.json)
 	(click download icon at the top right of the page, or press `ctrl + shift + s` on keyboard)
 
 **2. Place the snapshot .json file in the correct subfolder of your ComfyUI folder**
@@ -224,7 +224,7 @@ We use a specific set of tools pinned to versions that work together reliably. I
 ## Step 4: Test Your Setup
 
 **1. Use the demo workflow**
-If you don't see it already after loading the snapshot, [download the workflow .json file here](https://github.com/akajesstucker/Latent-Bodies-Assets/blob/main/Latent-Bodies_Workflow-1_Text-to-Image.json):
+If you don't see it already after loading the snapshot, [download the workflow .json file here](https://github.com/akajesstucker/latent-bodies/blob/main/Latent-Bodies_Workflow-1_Text-to-Image.json):
 
 You don't have to put this in a ComfyUI subfolder, but save it somewhere that makes sense for you (i.e. a Latent Bodies class folder).
 
@@ -295,5 +295,6 @@ Keep an eye on your credit balance. RunPod sends low-balance warnings. Add credi
 - [ ] Test workflow runs and produces an image
 - [ ] Experiment with "body" images using text prompts
 - [ ] Share a few image outputs to the class Discord
+- [ ] Read "A Body in Motion" by Corey Keller and/or "Identification of a Photograph With a Person at Liberty" by Josh Ellenbogen to discuss in next week's class
 
 If you get stuck at any step, post in the class Discord for help.

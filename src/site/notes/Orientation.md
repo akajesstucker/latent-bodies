@@ -72,7 +72,7 @@ Each session is two hours and pairs a conceptual/historical discussion with a ha
 - **WK2–4** — Hands-on in ComfyUI every week, building in complexity.
 - **WK5** — Final presentations: share your finished work with the group.
 
-Each week will have a **lesson plan** published here on the course site. It covers: key concepts, lecture slides, assigned readings, technical guides, example artists and artworks, and optional further references. Return to it after class if you want to review or go deeper.
+Each week's assets, such as lecture slides, assigned readings, technical guides, example artists and artworks, and optional further references will be published here on the class site. Return to these after class if you want to review or go deeper.
 
 ---
 
@@ -80,7 +80,7 @@ Each week will have a **lesson plan** published here on the course site. It cove
 
 You will need **ComfyUI** running before **Week 2**. You do not need it ready for the first session.
 
-See the full setup guide: [Setup Guide](setup-guide.md)
+See the full setup guide: [Setup Guide](/notes/week-1/setup-guide/)
 
 In brief, there are two paths:
 
