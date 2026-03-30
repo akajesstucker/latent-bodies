@@ -2,7 +2,7 @@
 dg-publish: true
 tags: gardenEntry
 ---
-# Latent Bodies — Student Orientation
+# Latent Bodies —  Orientation
 
 Welcome to **Latent Bodies**. This document covers a general overview of the course: who we are, how the course works, where things happen, and what you need to set up.
 
@@ -14,7 +14,7 @@ Welcome to **Latent Bodies**. This document covers a general overview of the cou
 
 The course evolved from two previous editions of "Mediated Bodies" at School of Machines. This edition focuses specifically on Stable Diffusion, ControlNet, AnimateDiff, and LoRA training.
 
-**Instructor:** Jess
+**Instructor:** Jess Tucker
 **Facilitated by:** School of Machines (Rachel Uwa)
 
 For the full course description, objectives, context, and week-by-week outline, see the [Syllabus](Syllabus.md).
@@ -23,14 +23,14 @@ For the full course description, objectives, context, and week-by-week outline, 
 
 ## Schedule
 
-| Week | Date | Title |
-|---|---|---|
-| WK1 | Monday, March 30 | The Latent Body |
-| WK2 | Monday, April 6 | Prompting the Flesh |
-| WK3 | Monday, April 13 | Structured by the Real |
-| WK4 | Monday, April 20 | Training Identity |
-| -- | Monday, April 27 | NO CLASS |
-| WK5 | Monday, May 4 | Bodies In and Out of Noise |
+| Week | Date             | Title                      |
+| ---- | ---------------- | -------------------------- |
+| WK1  | Monday, March 30 | The Latent Body            |
+| WK2  | Monday, April 6  | Prompting the Flesh        |
+| WK3  | Monday, April 13 | Structured by the Real     |
+| WK4  | Monday, April 20 | Training Identity          |
+| --   | Monday, April 27 | NO CLASS                   |
+| WK5  | Monday, May 4    | Bodies In and Out of Noise |
 
 ---
 
@@ -40,7 +40,8 @@ Sessions run **7:00–9:00pm CET** each Monday. Doors open at **6:50pm** for con
 
 - **Join link:** https://us06web.zoom.us/j/89468681620?pwd=nQChyVjyfPaDTXK22bMGJb4C1QCA5P.1
 - Meeting ID and passcode are pinned in Discord.
-**Recordings:** every session is recorded. The recording will be posted to Discord within 24 hours, so if you have to leave early or miss a class you can catch up.
+
+**Recordings:** every session is recorded, so if you have to leave early or miss a class you can catch up.
 
 ---
 
@@ -70,7 +71,7 @@ Each session is two hours and pairs a conceptual/historical discussion with a ha
 - **WK2–4** — Hands-on in ComfyUI every week, building in complexity.
 - **WK5** — Final presentations: share your finished work with the group.
 
-Each week has a **student lesson plan** published here on the course site. It covers: key concepts, lecture slides, assigned readings, technical guides, example artists and artworks, and optional further references. Return to it after class if you want to review or go deeper.
+Each week will have a **lesson plan** published here on the course site. It covers: key concepts, lecture slides, assigned readings, technical guides, example artists and artworks, and optional further references. Return to it after class if you want to review or go deeper.
 
 ---
 
