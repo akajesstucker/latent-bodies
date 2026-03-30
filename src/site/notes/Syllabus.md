@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+permalink: /notes/syllabus/
 ---
 # Latent Bodies — Syllabus
 

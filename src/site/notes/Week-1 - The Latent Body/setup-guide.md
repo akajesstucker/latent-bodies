@@ -1,5 +1,6 @@
 ﻿---
 dg-publish: true
+permalink: /notes/week-1/setup-guide/
 ---
 # Latent Bodies — ComfyUI Setup Guide
 
