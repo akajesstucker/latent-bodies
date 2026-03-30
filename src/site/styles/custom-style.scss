@@ -1,13 +1,9 @@
 body {
-    /***
-      ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
-      IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
-   ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+    --background-primary: #e8e8e8;
+    --background-secondary: #d4d4d4;
+    --text-normal: #1a1a1a;
+}
+
+h1 {
+    color: magenta;
 }
