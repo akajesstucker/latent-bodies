@@ -4,7 +4,7 @@ permalink: /notes/week-1/setup-guide/
 ---
 # Latent Bodies — ComfyUI Setup Guide
 
-Welcome! This guide will walk you through getting ComfyUI running before our first session. Read through the whole thing before starting so you understand what path is right for you.
+Welcome! This guide will walk you through getting ComfyUI running. Read through the whole thing before starting so you understand what path is right for you.
 
 ---
 

@@ -18,7 +18,7 @@ The course evolved from two previous editions of "Mediated Bodies" at School of 
 **Instructor:** Jess Tucker
 **Facilitated by:** School of Machines (Rachel Uwa)
 
-For the full course description, objectives, context, and week-by-week outline, see the [Syllabus](Syllabus.md).
+For the full course description, objectives, context, and week-by-week outline, see the [Syllabus](https://latentbodies.netlify.app/notes/syllabus/)
 
 ---
 
