@@ -1,6 +1,7 @@
 ---
 dg-publish: true
 tags: gardenEntry
+pinned: true
 ---
 # Latent Bodies —  Orientation
 

@@ -1,6 +1,7 @@
 ---
 dg-publish: true
 permalink: /notes/syllabus/
+pinned: true
 ---
 # Latent Bodies — Syllabus
 
