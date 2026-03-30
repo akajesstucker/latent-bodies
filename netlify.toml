@@ -5,6 +5,8 @@
 [build.environment]
   SITE_NAME_HEADER = "Latent Bodies"
   SITE_BASE_URL = "https://fabulous-truffle-36a33f.netlify.app"
+  dgShowFileTree = "true"
+  dgEnableSearch = "true"
 
 [[redirects]]
   from = "/api/*"
