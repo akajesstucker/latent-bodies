@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # Latent Bodies — Syllabus
 
 **Online, Mondays 7–9pm CET, March 30 – May 4 (no class April 27)**

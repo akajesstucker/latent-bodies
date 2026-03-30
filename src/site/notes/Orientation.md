@@ -1,3 +1,7 @@
+---
+dg-publish: true
+tags: gardenEntry
+---
 # Latent Bodies — Student Orientation
 
 Welcome to **Latent Bodies**. This document covers a general overview of the course: who we are, how the course works, where things happen, and what you need to set up.

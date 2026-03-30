@@ -1,4 +1,7 @@
-﻿# Latent Bodies — Student Setup Guide
+﻿---
+dg-publish: true
+---
+# Latent Bodies — Student Setup Guide
 
 Welcome! This guide will walk you through getting ComfyUI running before our first session. Read through the whole thing before starting so you understand what path is right for you.
 
