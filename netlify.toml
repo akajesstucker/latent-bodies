@@ -2,6 +2,10 @@
   publish = "dist"
   command = "npm install && npm run build"
 
+[build.environment]
+  SITE_NAME_HEADER = "Latent Bodies"
+  SITE_BASE_URL = "https://fabulous-truffle-36a33f.netlify.app"
+
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
