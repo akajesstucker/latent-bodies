@@ -1,10 +1,6 @@
 {
     "comfyui": "2f74e17975696d829af455845c584574bbc85774",
     "git_custom_nodes": {
-        "https://github.com/ConstantineB6/Comfy-Pilot.git": {
-            "hash": "772f639a7fed8513b145fb082102c7ac7837a766",
-            "disabled": false
-        },
         "https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet": {
             "hash": "f7a42fe6dc55d72692a8b46bfe1c0b120031d80e",
             "disabled": false
@@ -92,7 +88,12 @@
         "comfyui_ipadapter_plus": "2.0.0",
         "comfyui_ultimatesdupscale": "1.3.3"
     },
-    "file_custom_nodes": [],
+    "file_custom_nodes": [
+        {
+            "filename": "websocket_image_save.py",
+            "disabled": false
+        }
+    ],
     "pips": {
         "absl-py==2.1.0": "",
         "accelerate==1.11.0": "",
