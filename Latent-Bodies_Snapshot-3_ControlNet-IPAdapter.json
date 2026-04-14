@@ -76,6 +76,10 @@
         "https://github.com/WASasquatch/was-node-suite-comfyui": {
             "hash": "3ed45af34a14551dc28cb3127235cc7197d4633f",
             "disabled": false
+        },
+        "https://github.com/cubiq/ComfyUI_IPAdapter_plus": {
+            "hash": "a0f451a5113cf9becb0847b92884cb10cbdec0ef",
+            "disabled": false
         }
     },
     "cnr_custom_nodes": {
@@ -85,7 +89,6 @@
         "comfyui-videohelpersuite": "1.7.4",
         "ComfyUI-WanVideoWrapper": "1.3.8",
         "comfyui_image_metadata_extension": "1.3.4",
-        "comfyui_ipadapter_plus": "2.0.0",
         "comfyui_ultimatesdupscale": "1.3.3"
     },
     "file_custom_nodes": [
