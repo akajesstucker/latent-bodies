@@ -141,7 +141,7 @@ ComfyUI runs as long as that terminal window is open. Do not close it while usin
 **5. Install ComfyUI Manager**
 ComfyUI Manager lets you install and manage extra tools (called "custom nodes") that we will use in class.
 
-- Download `install-manager-for-portable-version.bat` from: `https://github.com/ltdrdata/ComfyUI-Manager/raw/main/scripts/install-manager-for-portable-version.bat`
+- Download `install-manager-for-portable-version.bat` from: `https://github.com/ltdrdata/ComfyUI-Manager/raw/main/scripts/
 - Move the downloaded file into your `ComfyUI_windows_portable` folder
 - Double-click it to run it
 

@@ -15,8 +15,8 @@ Download these files at the start of class. Place each file in the subfolder sho
 | `control_v11p_sd15_openpose.pth` | `models/controlnet/` | [Download](https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_openpose.pth) |
 | `control_v11f1p_sd15_depth.pth` | `models/controlnet/` | [Download](https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1p_sd15_depth.pth) |
 | `ip-adapter-plus_sd15.safetensors` | `models/ipadapter/` | [Download](https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors) |
-| `CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors` | `models/clip_vision/` | [Download](https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors) |
-| `Latent-Bodies_Snapshot-3_ControlNet-IPAdapter.json` | `user/_manager/snapshots/` | [Download](https://github.com/akajesstucker/latent-bodies/blob/main/Latent-Bodies_Snapshot-3_ControlNet-IPAdapter.json) |
+| `CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors` | `models/clip_vision/` | **Right-click → Save link as** — [Download](https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors) — then rename to `CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors` |
+| `Latent-Bodies_Snapshot-3_ControlNet-IPAdapter-WORKING.json` | `user/_manager/snapshots/` | [Download](https://github.com/akajesstucker/latent-bodies/blob/main/Latent-Bodies_Snapshot-3_ControlNet-IPAdapter-WORKING.json) |
 | `Latent-Bodies_Workflow-3_Image-Controlnet-IPAdapter.json` | anywhere | [Download](https://github.com/akajesstucker/latent-bodies/blob/main/Latent-Bodies_Workflow-3_Image-Controlnet-IPAdapter.json) |
 | `Latent-Bodies_Workflow-3_Video-Controlnet-IPAdapter.json` | anywhere | [Download](https://github.com/akajesstucker/latent-bodies/blob/main/Latent-Bodies_Workflow-3_Video-Controlnet-IPAdapter.json) |
 
@@ -184,7 +184,7 @@ wget "https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/mo
 Download each file, then place in the folders shown in the table above:
 
 - [ip-adapter-plus_sd15.safetensors](https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors) → `models/ipadapter/`
-- [CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors](https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors) → `models/clip_vision/`
+- CLIP Vision encoder → `models/clip_vision/`: **right-click [this link](https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors) and choose "Save link as"**, then manually type the filename as `CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors` before saving. If you just click the link, it will download as `model.safetensors` which will not be recognised by the workflow.
 
 Note: If `models/ipadapter/` does not exist inside your `ComfyUI_windows_portable\ComfyUI\` folder, create it.
 
@@ -216,7 +216,7 @@ Before loading the workflows, restore the class snapshot. This installs all the 
 
 **1. Download the snapshot file**
 
-- [Latent-Bodies_Snapshot-3_ControlNet-IPAdapter.json](https://github.com/akajesstucker/latent-bodies/blob/main/Latent-Bodies_Snapshot-3_ControlNet-IPAdapter.json)
+- [Latent-Bodies_Snapshot-3_ControlNet-IPAdapter-WORKING.json](https://github.com/akajesstucker/latent-bodies/blob/main/Latent-Bodies_Snapshot-3_ControlNet-IPAdapter-WORKING.json)
 
 **2. Place the snapshot file in the correct folder**
 
@@ -227,9 +227,12 @@ Before loading the workflows, restore the class snapshot. This installs all the 
 
 1. Click **Manager** in the ComfyUI top bar
 2. Click **"Snapshot Manager"**
-3. Find `Latent-Bodies_Snapshot-3_ControlNet-IPAdapter` in the list and click **"Restore"**
+3. Find `Latent-Bodies_Snapshot-3_ControlNet-IPAdapter-WORKING` in the list and click **"Restore"**
 4. ComfyUI will install all required custom nodes automatically
 5. Click **Restart** when prompted, then refresh the browser tab
+6. Update Advanced ControlNet — open a terminal and run the command below, then restart ComfyUI and refresh the browser tab once more:
+   - **Cloud (RunPod):** In the JupyterLab terminal: `cd /workspace/runpod-slim/ComfyUI/custom_nodes/comfyui-advanced-controlnet && git checkout main && git pull`
+   - **Local (Windows):** Open a terminal in your ComfyUI installation folder: `cd custom_nodes\comfyui-advanced-controlnet && git checkout main && git pull`
 
 ---
 
