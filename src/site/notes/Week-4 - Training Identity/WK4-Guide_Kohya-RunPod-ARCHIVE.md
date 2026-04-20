@@ -1,6 +1,3 @@
----
-dg-publish: false
----
 # Kohya SS on RunPod (Archived)
 
 This path is archived as of April 2026. The Kohya SS RunPod template has consistent reliability issues: pressing Start Training does nothing, and the Gradio interface fails to communicate with the backend through RunPod's URL proxy layer. Pod restarts and reconfiguration do not resolve the issue. Restore this to the main guide when a stable solution is confirmed.
