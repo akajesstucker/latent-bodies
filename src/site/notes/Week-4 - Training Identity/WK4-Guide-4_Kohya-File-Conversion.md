@@ -64,4 +64,4 @@ Get-ChildItem -Filter *.JPEG | Rename-Item -NewName { $_.Name -replace '\.JPEG$'
 for f in *.JPEG; do mv "$f" "${f%.JPEG}.jpg"; done
 ```
 
-Once your files are all `.jpg` (or all `.png`), return to the [[WK4-Guide-3_Kohya-Lora-Training|Kohya training guide]] and continue with the renaming step.
+Once your files are all `.jpg` (or all `.png`), return to the [Kohya training guide](/notes/week-4/kohya-lora-training/) and continue with the renaming step.

@@ -6,7 +6,7 @@ permalink: /notes/week-4/kohya-lora-training/
 
 Kohya SS gives you full control over training parameters and runs on your own machine. This guide is for students with a capable local NVIDIA GPU (RTX 3080 or better, 10 GB+ VRAM).
 
-**If you do not have local GPU hardware, use the [[WK4-Guide-2_Civitai-Lora-Training|Civitai guide]] instead.** Cloud-hosted Kohya options are not reliably working at this time.
+**If you do not have local GPU hardware, use the [Civitai guide](/notes/week-4/civitai-lora-training/) instead.** Cloud-hosted Kohya options are not reliably working at this time.
 
 ## Privacy
 
@@ -98,7 +98,7 @@ The simplest approach is manual conversion:
 - **Photoshop or any image editor:** File > Save As / Export As
 - Or just start with images already in `.jpg` or `.png` — this avoids the conversion step entirely
 
-If you have many files to convert and prefer a scripted approach, see [[WK4-Guide-4_Kohya-File-Conversion|converting files with the command line]], then come back here.
+If you have many files to convert and prefer a scripted approach, see [converting files with the command line](/notes/week-4/kohya-file-conversion/), then come back here.
 
 #### 3. Rename your images
 
