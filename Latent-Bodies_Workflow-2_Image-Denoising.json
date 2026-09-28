@@ -50,7 +50,7 @@
           "name": "output",
           "type": "LATENT",
           "links": [
-            68
+            101
           ]
         },
         {
@@ -114,7 +114,7 @@
           "name": "output",
           "type": "LATENT",
           "links": [
-            41
+            102
           ]
         },
         {
@@ -178,7 +178,7 @@
           "name": "output",
           "type": "LATENT",
           "links": [
-            44
+            105
           ]
         },
         {
@@ -383,7 +383,7 @@
           "name": "LATENT",
           "type": "LATENT",
           "links": [
-            38
+            87
           ]
         }
       ],
@@ -447,7 +447,7 @@
           "name": "output",
           "type": "LATENT",
           "links": [
-            42
+            103
           ]
         },
         {
@@ -511,7 +511,7 @@
           "name": "output",
           "type": "LATENT",
           "links": [
-            61
+            104
           ]
         },
         {
@@ -622,7 +622,7 @@
           "name": "output",
           "type": "LATENT",
           "links": [
-            40
+            100
           ]
         },
         {
@@ -1005,46 +1005,6 @@
       "widgets_values": [],
       "color": "#233",
       "bgcolor": "#355"
-    },
-    {
-      "id": 27,
-      "type": "PreviewLatent",
-      "pos": [
-        917.85693359375,
-        1191.45166015625
-      ],
-      "size": [
-        244.47499084472656,
-        246.00006103515625
-      ],
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "link": 38
-        }
-      ],
-      "outputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "links": [
-            87
-          ]
-        }
-      ],
-      "title": "Starting Noise",
-      "properties": {
-        "cnr_id": "comfyui-previewlatent",
-        "ver": "9425a66603c227e041f384886f639bce5d03c22e",
-        "Node name for S&R": "PreviewLatent"
-      },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
     },
     {
       "id": 69,
@@ -1543,240 +1503,6 @@
       ],
       "color": "#233",
       "bgcolor": "#355"
-    },
-    {
-      "id": 34,
-      "type": "PreviewLatent",
-      "pos": [
-        1215.9429931640625,
-        1191.3258056640625
-      ],
-      "size": [
-        244.47499084472656,
-        246.00006103515625
-      ],
-      "flags": {},
-      "order": 28,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "link": 40
-        }
-      ],
-      "outputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "links": [
-            100
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-previewlatent",
-        "ver": "9425a66603c227e041f384886f639bce5d03c22e",
-        "Node name for S&R": "PreviewLatent"
-      },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 45,
-      "type": "PreviewLatent",
-      "pos": [
-        1505.4288330078125,
-        1192.2274169921875
-      ],
-      "size": [
-        244.47499084472656,
-        246.00006103515625
-      ],
-      "flags": {},
-      "order": 33,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "link": 68
-        }
-      ],
-      "outputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "links": [
-            101
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-previewlatent",
-        "ver": "9425a66603c227e041f384886f639bce5d03c22e",
-        "Node name for S&R": "PreviewLatent"
-      },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 35,
-      "type": "PreviewLatent",
-      "pos": [
-        1800.56005859375,
-        1193.8646240234375
-      ],
-      "size": [
-        244.47499084472656,
-        246.00006103515625
-      ],
-      "flags": {},
-      "order": 29,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "link": 41
-        }
-      ],
-      "outputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "links": [
-            102
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-previewlatent",
-        "ver": "9425a66603c227e041f384886f639bce5d03c22e",
-        "Node name for S&R": "PreviewLatent"
-      },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 36,
-      "type": "PreviewLatent",
-      "pos": [
-        2103.679931640625,
-        1189.4862060546875
-      ],
-      "size": [
-        244.47499084472656,
-        246.00006103515625
-      ],
-      "flags": {},
-      "order": 30,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "link": 42
-        }
-      ],
-      "outputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "links": [
-            103
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-previewlatent",
-        "ver": "9425a66603c227e041f384886f639bce5d03c22e",
-        "Node name for S&R": "PreviewLatent"
-      },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 42,
-      "type": "PreviewLatent",
-      "pos": [
-        2401.8935546875,
-        1187.8468017578125
-      ],
-      "size": [
-        244.47499084472656,
-        246.00006103515625
-      ],
-      "flags": {},
-      "order": 32,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "link": 61
-        }
-      ],
-      "outputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "links": [
-            104
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-previewlatent",
-        "ver": "9425a66603c227e041f384886f639bce5d03c22e",
-        "Node name for S&R": "PreviewLatent"
-      },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 39,
-      "type": "PreviewLatent",
-      "pos": [
-        2705.513427734375,
-        1188.7362060546875
-      ],
-      "size": [
-        244.47499084472656,
-        246.00006103515625
-      ],
-      "flags": {},
-      "order": 31,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "link": 44
-        }
-      ],
-      "outputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "links": [
-            105
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-previewlatent",
-        "ver": "9425a66603c227e041f384886f639bce5d03c22e",
-        "Node name for S&R": "PreviewLatent"
-      },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
     },
     {
       "id": 14,
@@ -2336,14 +2062,6 @@
       "LATENT"
     ],
     [
-      38,
-      31,
-      0,
-      27,
-      0,
-      "LATENT"
-    ],
-    [
       39,
       32,
       0,
@@ -2352,44 +2070,12 @@
       "SIGMAS"
     ],
     [
-      40,
-      21,
-      0,
-      34,
-      0,
-      "LATENT"
-    ],
-    [
-      41,
-      33,
-      0,
-      35,
-      0,
-      "LATENT"
-    ],
-    [
-      42,
-      37,
-      0,
-      36,
-      0,
-      "LATENT"
-    ],
-    [
       43,
       38,
       0,
       37,
       3,
       "SIGMAS"
-    ],
-    [
-      44,
-      40,
-      0,
-      39,
-      0,
-      "LATENT"
     ],
     [
       45,
@@ -2512,14 +2198,6 @@
       "LATENT"
     ],
     [
-      61,
-      44,
-      0,
-      42,
-      0,
-      "LATENT"
-    ],
-    [
       62,
       43,
       0,
@@ -2566,14 +2244,6 @@
       43,
       0,
       "MODEL"
-    ],
-    [
-      68,
-      47,
-      0,
-      45,
-      0,
-      "LATENT"
     ],
     [
       69,
@@ -2689,7 +2359,7 @@
     ],
     [
       87,
-      27,
+      31,
       0,
       65,
       0,
@@ -2745,7 +2415,7 @@
     ],
     [
       100,
-      34,
+      21,
       0,
       69,
       0,
@@ -2753,7 +2423,7 @@
     ],
     [
       101,
-      45,
+      47,
       0,
       72,
       0,
@@ -2761,7 +2431,7 @@
     ],
     [
       102,
-      35,
+      33,
       0,
       75,
       0,
@@ -2769,7 +2439,7 @@
     ],
     [
       103,
-      36,
+      37,
       0,
       78,
       0,
@@ -2777,7 +2447,7 @@
     ],
     [
       104,
-      42,
+      44,
       0,
       81,
       0,
@@ -2785,7 +2455,7 @@
     ],
     [
       105,
-      39,
+      40,
       0,
       84,
       0,

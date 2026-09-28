@@ -632,7 +632,7 @@
           "name": "LATENT",
           "type": "LATENT",
           "links": [
-            236
+            231
           ]
         }
       ],
@@ -692,45 +692,6 @@
         "cnr_id": "comfy-core",
         "ver": "0.3.47",
         "Node name for S&R": "VAEDecode"
-      },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 126,
-      "type": "PreviewLatent",
-      "pos": [
-        3145.917724609375,
-        701.5320434570312
-      ],
-      "size": [
-        244.47499084472656,
-        246.00006103515625
-      ],
-      "flags": {},
-      "order": 27,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "link": 215
-        }
-      ],
-      "outputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "links": [
-            230
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-previewlatent",
-        "ver": "9425a66603c227e041f384886f639bce5d03c22e",
-        "Node name for S&R": "PreviewLatent"
       },
       "widgets_values": [],
       "color": "#323",
@@ -903,87 +864,6 @@
       "widgets_values": [],
       "color": "#223",
       "bgcolor": "#335"
-    },
-    {
-      "id": 143,
-      "type": "PreviewLatent",
-      "pos": [
-        3813.84326171875,
-        714.9028930664062
-      ],
-      "size": [
-        244.47499084472656,
-        246.00006103515625
-      ],
-      "flags": {},
-      "order": 28,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "link": 241
-        }
-      ],
-      "outputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "links": [
-            239
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-previewlatent",
-        "ver": "9425a66603c227e041f384886f639bce5d03c22e",
-        "Node name for S&R": "PreviewLatent"
-      },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 125,
-      "type": "PreviewLatent",
-      "pos": [
-        2528.452880859375,
-        727.4977416992188
-      ],
-      "size": [
-        244.47499084472656,
-        246.0001220703125
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "link": 236
-        }
-      ],
-      "outputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "links": [
-            231
-          ]
-        }
-      ],
-      "title": "Starting Noise",
-      "properties": {
-        "cnr_id": "comfyui-previewlatent",
-        "ver": "9425a66603c227e041f384886f639bce5d03c22e",
-        "Node name for S&R": "PreviewLatent"
-      },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
     },
     {
       "id": 132,
@@ -1482,7 +1362,7 @@
           "name": "output",
           "type": "LATENT",
           "links": [
-            215
+            230
           ]
         },
         {
@@ -1548,7 +1428,7 @@
           "name": "output",
           "type": "LATENT",
           "links": [
-            241
+            239
           ]
         },
         {
@@ -1926,14 +1806,6 @@
       "SIGMAS"
     ],
     [
-      215,
-      124,
-      0,
-      126,
-      0,
-      "LATENT"
-    ],
-    [
       216,
       130,
       0,
@@ -2031,7 +1903,7 @@
     ],
     [
       230,
-      126,
+      124,
       0,
       136,
       0,
@@ -2039,7 +1911,7 @@
     ],
     [
       231,
-      125,
+      122,
       0,
       133,
       0,
@@ -2078,14 +1950,6 @@
       "VAE"
     ],
     [
-      236,
-      122,
-      0,
-      125,
-      0,
-      "LATENT"
-    ],
-    [
       237,
       83,
       0,
@@ -2103,7 +1967,7 @@
     ],
     [
       239,
-      143,
+      145,
       0,
       142,
       0,
@@ -2116,14 +1980,6 @@
       145,
       3,
       "SIGMAS"
-    ],
-    [
-      241,
-      145,
-      0,
-      143,
-      0,
-      "LATENT"
     ],
     [
       242,

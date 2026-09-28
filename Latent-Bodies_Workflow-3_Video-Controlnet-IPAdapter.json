@@ -1421,7 +1421,7 @@
     },
     {
       "id": 160,
-      "type": "DWPreprocessor",
+      "type": "OpenposePreprocessor",
       "pos": [
         1782.0330810546875,
         -434.5436706542969
@@ -1457,20 +1457,25 @@
       ],
       "properties": {
         "cnr_id": "comfyui_controlnet_aux",
-        "ver": "5a049bde9cc117dafc327cded156459289097ea1",
-        "Node name for S&R": "DWPreprocessor"
+        "ver": "302a3891d15b4285d9c9e0a00f4d8daa2eb46f25",
+        "Node name for S&R": "OpenposePreprocessor"
       },
       "widgets_values": [
         "enable",
         "enable",
         "enable",
         512,
-        "yolox_l.onnx",
-        "dw-ll_ucoco_384_bs5.torchscript.pt",
         "disable"
       ],
       "color": "#322",
-      "bgcolor": "#533"
+      "bgcolor": "#533",
+      "widgets_values_named": {
+        "detect_hand": "enable",
+        "detect_body": "enable",
+        "detect_face": "enable",
+        "resolution": 512,
+        "scale_stick_for_xinsr_cn": "disable"
+      }
     },
     {
       "id": 153,
