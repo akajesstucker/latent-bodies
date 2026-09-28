@@ -5,8 +5,8 @@ pinned: true
 ---
 # Latent Bodies — Syllabus
 
-**Online, Mondays 7–9pm CET, March 30 – May 4 (no class April 27)**
-**Instructor:** Jess | **Facilitated by:** School of Machines
+**Online, Mondays 7–9pm CET, September 28 – October 26**
+**Instructor:** Jess Tucker | **Facilitated by:** School of Machines
 
 ---
 
@@ -46,7 +46,7 @@ This course is suitable for all experience levels and will be exciting for anyon
 
 ## Course Outline
 
-### WK1 — The Latent Body (March 30)
+### WK1 — The Latent Body (September 28)
 
 - Introduction to the class and to each other.
 - Origins of facial recognition in early surveillance strategies and how they feed current datasets.
@@ -54,32 +54,30 @@ This course is suitable for all experience levels and will be exciting for anyon
 - How is the body reconstructed as mechanical, suspect, or predictable?
 - Technical overview: getting oriented with ComfyUI. Setup is homework after this session.
 
-### WK2 — Prompting the Flesh (April 6)
+### WK2 — Bodies In and Out of Noise (October 5)
 
 - Technical workshop: building simple ComfyUI networks. Generating images and short videos using text/image prompts and scheduling.
-- Evolution and innovation in representing the body (painting to photography to film to VR) and how text-to-image models extend and disrupt this history.
-- Exploring the "latent space" of the body: drifting between human, animal, and machine forms.
+- Exploring the underlying logic of diffusion models and their relation to other computer graphics conventions, simulations, randomness, and nature.
 - How is the body represented in the way we query the system, rather than just as the thing we see?
 
-### WK3 — Structured by the Real (April 13)
+### WK3 — In Positions & Impositions (October 12)
 
 - Technical workshop: using ControlNets in ComfyUI to structure compositions through diffusion generation.
-- Using input video of our own performing bodies to drive the composition of generated output.
-- What does it mean to source a lived bodily experience for movement in a hallucinated virtual world?
+- Using input images/videos of our own performing bodies to drive the composition of generated output.
+- Evolution and innovation in representing the body (painting to photography to film to VR) and how text-to-image models extend and disrupt this history.
+- What cultural logics of visibility, reality, and value, are reified and/or complicated within these tools?
 
-### WK4 — Training Identity (April 20)
+### WK4 — Training Identity (October 19)
 
 - Examining methods and case studies of deepfakes.
 - Technical workshop: training a LoRA (Low-Rank Adaptation) on your own face/body and generating images. Sourcing community LoRAs by others online to craft new aesthetic combinations.
 - How do we understand our relationship to the machine when it mimics us, or reinterprets us through the lens of other people's values and desires?
 
-### (No class April 27)
-
-### WK5 — Bodies In and Out of Noise (May 4)
+### WK5 — Final Sharing (October 26)
 
 - Final presentations: sharing of participants' final works. Final projects may incorporate still and/or moving images.
 - How do the productions of our trained machines teach us about our own trained beliefs and expectations with respect to bodies?
-- Discussion: diffusing the body as a form of digital resistance or submission.
+- Discussion: to what extent is resistance, critique, inquiry, transcendence possible through creatively engaging these tools?
 
 ---
 
@@ -92,7 +90,7 @@ The course emphasizes node-based generative AI workflows, specifically **ComfyUI
 - **IP-Adapter** — image referencing and conditioning
 - **LoRA training** — custom model training on your own face and body
 
-All tools run inside ComfyUI. Students without local NVIDIA hardware (8GB+ VRAM) will use cloud GPU services (RunPod).
+All tools run inside ComfyUI. Students without local NVIDIA hardware (8GB+ VRAM) will use a cloud path — either RunPod (pay-per-hour) or Comfy Cloud (flat monthly subscription), both covered in the setup guide.
 
 ---
 
@@ -104,11 +102,13 @@ The final project is a short still and/or moving image work produced using the t
 
 ## Cloud GPU Costs
 
-Students using cloud services rather than local hardware should budget approximately:
+Students using cloud services rather than local hardware should budget approximately. **RunPod** (pay-per-hour):
 
 | Activity             | Estimated cost |
 | -------------------- | -------------- |
-| Weekly 2hr session   | $1.00–$3.00    |
+| Weekly 2hr session   | $0.50–$1.50    |
 | LoRA training (WK4)  | $1.00–$2.00    |
-| Independent practice | ~$0.54/hr      |
+| Independent practice | ~$0.25–0.75/hr |
+
+**Comfy Cloud** (flat monthly subscription instead of hourly): the **Creator tier ($35/mo)** is what this course needs. One month's subscription covers the whole course, so you can subscribe any time during or after Session 1. See the setup guide for details.
 
