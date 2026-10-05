@@ -12,7 +12,7 @@ pinned: true
 
 ## Course Description
 
-This course invites us to think about how bodies perform with and within the latent spaces of technological media. We will consider how bodies are broken apart, analyzed, and reconstructed in generative systems, from dataset fragmentation to diffusion-based reassembly. We will make and share ou1r own experimental artworks while exploring radical and canonical artists and theorists from this multifaceted field.
+This course invites us to think about how bodies perform with and within the latent spaces of technological media. We will consider how bodies are broken apart, analyzed, and reconstructed in generative systems, from dataset fragmentation to diffusion-based reassembly. We will make and share our own experimental artworks while exploring radical and canonical artists and theorists from this multifaceted field.
 
 We will consider the "diffused" body and the generative perspective: how we see and how we are seen within computational fields of representation. The mechanisms underpinning generative AI processes shape the meaning of the image they produce, putting us in a kind of fluid, probabilistic body moving through noise to emerge as a strange new signal. With generative AI, unique possibilities open up to create images that reproduce and fracture identity, merge anatomies, hallucinate motion, and manipulate the very schema of the human form. When we work in node-based generative environments like ComfyUI, we can choose to simulate, recombine, or transcend the real, bending bodies and perspectives. In this course, we will expand our understanding of embodiment with generative AI technology, learning and experimenting with diffusion workflows inside ComfyUI. We will create new image and video works that use these pipelines to remap, reinterpret, translate, and manipulate our own lived and experienced embodiment. We will reflect on the nature of these tools and their complicated histories, as well as their current applications in the world, in order to situate our own creations within this broader critical context.
 
@@ -102,7 +102,7 @@ The final project is a short still and/or moving image work produced using the t
 
 ## Cloud GPU Costs
 
-Students using cloud services rather than local hardware should budget approximately. **RunPod** (pay-per-hour):
+Students using cloud services rather than local hardware should budget approximately as follows. **RunPod** (pay-per-hour):
 
 | Activity             | Estimated cost |
 | -------------------- | -------------- |

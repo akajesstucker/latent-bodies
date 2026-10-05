@@ -23,6 +23,8 @@ Run everything on your own machine. Requires a dedicated NVIDIA graphics card wi
 
 If you are not sure which GPU you have: right-click your desktop → Display Settings → Advanced Display → your GPU name will be listed. If it says NVIDIA and has 8GB+ VRAM, you can use Option C. Otherwise, pick A or B based on the comparison below.
 
+**On a Mac?** Apple Silicon Macs can run ComfyUI locally, but it depends on your chip and memory, and it is slower than a Windows/NVIDIA setup for the video and ControlNet weeks. See [A Note on Macs / Apple Silicon](/notes/week-1/mac-apple-silicon-note/) before deciding.
+
 
 ---
 ## Option A: Comfy Cloud Setup
@@ -120,6 +122,7 @@ Next time you connect: repeat from step 4. Your volume will be there, with all y
 - NVIDIA GPU with 8GB+ VRAM
 - 32GB+ RAM
 - At least 50GB of free disk space
+- Using a Mac instead? See [A Note on Macs / Apple Silicon](/notes/week-1/mac-apple-silicon-note/)
 
 **1. Download ComfyUI Portable**
 Download the latest portable release from:
