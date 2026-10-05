@@ -202,7 +202,7 @@
         "Node name for S&R": "LoraLoader"
       },
       "widgets_values": [
-        "SD15\\v3_sd15_adapter.ckpt",
+        "guoyww__animatediff__v3_sd15_adapter.safetensors",
         0.4,
         0.4
       ],
@@ -260,7 +260,7 @@
         "Node name for S&R": "LoraLoader"
       },
       "widgets_values": [
-        "SD15\\AnimateLCM_sd15_t2v_lora.safetensors",
+        "AnimateLCM_sd15_t2v_lora.safetensors",
         1,
         1
       ],
@@ -453,20 +453,7 @@
         "save_metadata": true,
         "trim_to_audio": false,
         "pingpong": false,
-        "save_output": true,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "filename": "week2-AD1-latent_00003.mp4",
-            "subfolder": "",
-            "type": "output",
-            "format": "video/h264-mp4",
-            "frame_rate": 24,
-            "workflow": "week2-AD1-latent_00003.png",
-            "fullpath": "C:\\Users\\fette\\Documents\\ComfyUI\\ComfyUI_windows_portable\\ComfyUI\\output\\week2-AD1-latent_00003.mp4"
-          }
-        }
+        "save_output": true
       },
       "color": "#323",
       "bgcolor": "#535"
@@ -533,20 +520,7 @@
         "save_metadata": true,
         "trim_to_audio": false,
         "pingpong": false,
-        "save_output": true,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "filename": "week2-AD1-denoise1_00015.mp4",
-            "subfolder": "",
-            "type": "output",
-            "format": "video/h264-mp4",
-            "frame_rate": 24,
-            "workflow": "week2-AD1-denoise1_00015.png",
-            "fullpath": "C:\\Users\\fette\\Documents\\ComfyUI\\ComfyUI_windows_portable\\ComfyUI\\output\\week2-AD1-denoise1_00015.mp4"
-          }
-        }
+        "save_output": true
       },
       "color": "#323",
       "bgcolor": "#535"
@@ -800,20 +774,7 @@
         "save_metadata": true,
         "trim_to_audio": false,
         "pingpong": false,
-        "save_output": true,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "filename": "week2-AD1_00017.mp4",
-            "subfolder": "",
-            "type": "output",
-            "format": "video/h264-mp4",
-            "frame_rate": 24,
-            "workflow": "week2-AD1_00017.png",
-            "fullpath": "C:\\Users\\fette\\Documents\\ComfyUI\\ComfyUI_windows_portable\\ComfyUI\\output\\week2-AD1_00017.mp4"
-          }
-        }
+        "save_output": true
       },
       "color": "#233",
       "bgcolor": "#355"
@@ -1181,7 +1142,7 @@
         "Node name for S&R": "VAELoader"
       },
       "widgets_values": [
-        "vae-ft-mse-840000-ema-pruned.ckpt"
+        "vae-ft-mse-840000-ema-pruned.safetensors"
       ],
       "color": "#332922",
       "bgcolor": "#593930"
@@ -1296,20 +1257,7 @@
         "save_metadata": true,
         "trim_to_audio": false,
         "pingpong": false,
-        "save_output": true,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "filename": "week2-AD1-denoise2_00008.mp4",
-            "subfolder": "",
-            "type": "output",
-            "format": "video/h264-mp4",
-            "frame_rate": 24,
-            "workflow": "week2-AD1-denoise2_00008.png",
-            "fullpath": "C:\\Users\\fette\\Documents\\ComfyUI\\ComfyUI_windows_portable\\ComfyUI\\output\\week2-AD1-denoise2_00008.mp4"
-          }
-        }
+        "save_output": true
       },
       "color": "#323",
       "bgcolor": "#535"
