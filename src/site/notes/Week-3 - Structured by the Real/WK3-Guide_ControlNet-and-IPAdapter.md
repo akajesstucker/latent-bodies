@@ -10,7 +10,7 @@ permalink: /notes/week-3/controlnet-and-ipadapter/
 
 **Comfy Cloud users:** models are not downloaded to a folder — they are imported through the Model Library instead. Skip the model rows below and follow the Comfy Cloud subsection inside Part 1 and Part 2. You still need the Comfy Cloud workflow files, linked in Part 4.
 
-**RunPod and Local users:** download these files at the start of class and place each one in the subfolder shown, inside your `ComfyUI/` directory (local) or `/workspace/runpod-slim/ComfyUI/` (RunPod).
+**Local users:** download these files at the start of class and place each one in the subfolder shown, inside your `ComfyUI/` directory.
 
 | File | Folder | Link |
 |------|--------|------|
@@ -20,11 +20,11 @@ permalink: /notes/week-3/controlnet-and-ipadapter/
 | `CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors` | `models/clip_vision/` | **Right-click → Save link as** — [Download](https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors) — then rename to `CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors` |
 | `Latent-Bodies_Snapshot-3_ControlNet-IPAdapter-WORKING.json` | `user/_manager/snapshots/` | [Download](https://github.com/akajesstucker/latent-bodies/blob/main/Latent-Bodies_Snapshot-3_ControlNet-IPAdapter-WORKING.json) |
 
-Workflow files (one pair per platform — Comfy Cloud and RunPod/Local need different versions) are linked in Part 4.
+Workflow files (one pair per platform — Comfy Cloud and Local need different versions) are linked in Part 4.
 
 Note: The `ipadapter` folder may not exist yet — create it inside `models/` if it is missing.
 
-The ControlNet files above are the **fp16 safetensors** versions, not the original `.pth` files — same models, half the size, and the only format Comfy Cloud's importer accepts. Using them across all three setups means one less thing to keep track of.
+The ControlNet files above are the **fp16 safetensors** versions, not the original `.pth` files — same models, half the size, and the only format Comfy Cloud's importer accepts. Using them on both setups means one less thing to keep track of.
 
 The rest of this guide explains each step in detail. Use it during class if you get stuck, or on your own afterward to go deeper.
 
@@ -37,7 +37,7 @@ This week introduces two techniques for guiding image and video generation with 
 - **ControlNet** uses an image you provide (a photo of yourself, a 3D model, a sketch, a video frame) to extract structural information — your body's pose, or the depth layout of a scene — and uses that structure to guide generation.
 - **IPAdapter** uses a reference image to transfer visual qualities — color palette, texture, style, mood — into the generation, without describing them in text.
 
-Both techniques require additional model files beyond the base checkpoint. This guide walks through getting all required models onto Comfy Cloud, RunPod, and local Windows setups.
+Both techniques require additional model files beyond the base checkpoint. This guide walks through getting all required models onto Comfy Cloud and local Windows setups.
 
 ---
 
@@ -54,7 +54,7 @@ These two are required. Get them at the beginning of class (directions below).
 | `control_v11p_sd15_openpose_fp16.safetensors` | ~700 MB | Detects body keypoints and skeleton pose |
 | `control_v11f1p_sd15_depth_fp16.safetensors`  | ~700 MB | Estimates distance/depth from image      |
 
-These are the fp16 safetensors versions of the standard ControlNet-v1-1 models, not the original `.pth` files — same models, half the file size, and the only format Comfy Cloud's importer accepts. Using them across all three setups keeps RunPod and Local on the same files as Comfy Cloud.
+These are the fp16 safetensors versions of the standard ControlNet-v1-1 models, not the original `.pth` files — same models, half the file size, and the only format Comfy Cloud's importer accepts. Using them on both setups keeps Local on the same files as Comfy Cloud.
 
 #### Comfy Cloud
 
@@ -66,16 +66,6 @@ These are the fp16 safetensors versions of the standard ControlNet-v1-1 models, 
 3. Click **Import** and wait for both downloads to finish. They appear under **Imported** in the Model Library.
 
 Import both before loading the workflow, so it can find them in the `ACN_ControlNetLoaderAdvanced` node's dropdown.
-
-#### Cloud (RunPod)
-
-Open a JupyterLab terminal (Connect tab → JupyterLab → File → New → Terminal) and paste both commands, then press enter:
-
-```bash
-wget "https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11p_sd15_openpose_fp16.safetensors" -O /workspace/runpod-slim/ComfyUI/models/controlnet/control_v11p_sd15_openpose_fp16.safetensors
-
-wget "https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11f1p_sd15_depth_fp16.safetensors" -O /workspace/runpod-slim/ComfyUI/models/controlnet/control_v11f1p_sd15_depth_fp16.safetensors
-```
 
 #### Local (Windows)
 
@@ -100,12 +90,7 @@ These are optional — not needed for class, but worth experimenting with after 
 | `control_v11p_sd15_normalbae.pth` | Surface normals — encodes how surfaces face the light, useful for sculptural or 3D-feeling forms |
 | `control_v11p_sd15_scribble.pth` | Takes rough hand-drawn sketches as input |
 
-All are from the same repository. Replace the filename in the `wget` URL or download link above with the file you want.
-
-**Cloud (RunPod) — example for canny:**
-```bash
-wget "https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_canny.pth" -O /workspace/runpod-slim/ComfyUI/models/controlnet/control_v11p_sd15_canny.pth
-```
+All are from the same repository. Replace the filename in the download link above with the file you want.
 
 **Local:** [Direct download links for all ControlNet-v1-1 models](https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main)
 
@@ -144,7 +129,7 @@ The **DepthAnythingPreprocessor** node analyzes your image and generates a grays
 
 When you first run it, it will automatically download the model file it needs (`depth_anything_vitl14.pth`). This is normal — it happens once and you do not need to manage that file manually, on any platform.
 
-**Comfy Cloud:** this model only exists in `.pth` format, so it is not imported through the Model Library like the other models this week — there is nothing to import ahead of time. The node handles it the same way RunPod and Local do, fetching it itself on first use. Confirmed working live: dropped the node onto a test canvas, ran it against a reference photo, and it produced a correct depth map in under 3 seconds with no setup step at all.
+**Comfy Cloud:** this model only exists in `.pth` format, so it is not imported through the Model Library like the other models this week — there is nothing to import ahead of time. The node handles it the same way Local does, fetching it itself on first use. Confirmed working live: dropped the node onto a test canvas, ran it against a reference photo, and it produced a correct depth map in under 3 seconds with no setup step at all.
 
 #### Connecting it in ComfyUI
 
@@ -203,18 +188,6 @@ Neither of these is in Comfy Cloud's pre-loaded library — both need to be impo
 
 Import both before loading the workflow, so the `IPAdapterUnifiedLoader` node can find them.
 
-#### Cloud (RunPod)
-
-In your JupyterLab terminal, first create the ipadapter folder if it does not exist, then download both files:
-
-```bash
-mkdir -p /workspace/runpod-slim/ComfyUI/models/ipadapter
-
-wget "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors" -O /workspace/runpod-slim/ComfyUI/models/ipadapter/ip-adapter-plus_sd15.safetensors
-
-wget "https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors" -O /workspace/runpod-slim/ComfyUI/models/clip_vision/CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
-```
-
 #### Local (Windows)
 
 Download each file, then place in the folders shown in the table above:
@@ -233,13 +206,6 @@ Note: If `models/ipadapter/` does not exist inside your `ComfyUI_windows_portabl
 | `ip-adapter_sd15.safetensors` | The base (lighter) adapter — less fidelity, faster |
 | `ip-adapter-plus-face_sd15.safetensors` | Tuned specifically for faces — stronger identity transfer from portrait reference images |
 
-**Cloud (RunPod) — both go in `models/ipadapter/`:**
-```bash
-wget "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.safetensors" -O /workspace/runpod-slim/ComfyUI/models/ipadapter/ip-adapter_sd15.safetensors
-
-wget "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus-face_sd15.safetensors" -O /workspace/runpod-slim/ComfyUI/models/ipadapter/ip-adapter-plus-face_sd15.safetensors
-```
-
 **Local:** download and place in `ComfyUI_windows_portable\ComfyUI\models\ipadapter\`
 
 The CLIP Vision encoder you already downloaded is shared — it works with all IPAdapter variants. You do not need a separate one for each model.
@@ -250,7 +216,7 @@ The CLIP Vision encoder you already downloaded is shared — it works with all I
 
 **Comfy Cloud: skip this whole part.** There is no snapshot concept on Comfy Cloud — node versions are managed platform-wide, not per-workflow. Every node this week's workflows use (`ACN_ControlNetLoaderAdvanced`, `OpenposePreprocessor`, the full IPAdapter suite) is already installed and confirmed working. Go straight to Part 4.
 
-RunPod and Local: before loading the workflows, restore the class snapshot. This installs all the custom node packages the workflows depend on, pinned to versions that are known to work together.
+Local: before loading the workflows, restore the class snapshot. This installs all the custom node packages the workflows depend on, pinned to versions that are known to work together.
 
 **1. Download the snapshot file**
 
@@ -258,8 +224,7 @@ RunPod and Local: before loading the workflows, restore the class snapshot. This
 
 **2. Place the snapshot file in the correct folder**
 
-- **Cloud (RunPod):** Use the JupyterLab file browser in the left sidebar and navigate to `/runpod-slim/ComfyUI/user/_manager/snapshots/`. Drag and drop the file there.
-- **Local (Windows):** Open Windows Explorer and navigate to `ComfyUI_windows_portable\ComfyUI\user\_manager\snapshots\`. Drag and drop the file there.
+Open Windows Explorer and navigate to `ComfyUI_windows_portable\ComfyUI\user\_manager\snapshots\`. Drag and drop the file there.
 
 **3. Restore the snapshot**
 
@@ -273,7 +238,7 @@ RunPod and Local: before loading the workflows, restore the class snapshot. This
 
 ## Part 4: Download Workflows
 
-There are two versions of each workflow, one for Comfy Cloud and one for RunPod/Local. They are identical except for how the models are referenced, so make sure you download the right one.
+There are two versions of each workflow, one for Comfy Cloud and one for Local. They are identical except for how the models are referenced, so make sure you download the right one.
 
 To download a file, click its link, then click the download icon at the top right of the GitHub page (or press `ctrl + shift + s`). Save them somewhere that makes sense (e.g. a Latent Bodies class folder on your desktop).
 
@@ -284,7 +249,7 @@ To download a file, click its link, then click the download icon at the top righ
 
 To load a workflow, drag and drop the `.json` file onto the ComfyUI canvas in your browser.
 
-### RunPod and Local
+### Local
 
 - [Latent-Bodies_Workflow-3_Image-Controlnet-IPAdapter_Local.json](https://github.com/akajesstucker/latent-bodies/blob/main/Latent-Bodies_Workflow-3_Image-Controlnet-IPAdapter_Local.json)
 - [Latent-Bodies_Workflow-3_Video-Controlnet-IPAdapter_Local.json](https://github.com/akajesstucker/latent-bodies/blob/main/Latent-Bodies_Workflow-3_Video-Controlnet-IPAdapter_Local.json)
@@ -306,8 +271,6 @@ For this session you will use your own images or video frames as the input drivi
 
 To load an input image in ComfyUI, use the `Load Image` node — click the image area inside the node to open a file browser, or drag and drop an image file directly onto the node.
 
-**RunPod users:** Use the JupyterLab file browser to upload images to your network volume before the session. Navigate to `/workspace/runpod-slim/ComfyUI/input/` and drag your files there. They will then be available from within ComfyUI's Load Image node.
-
 **Comfy Cloud users:** no separate upload step — click the `Load Image` node's image area and upload directly from there, same as Local.
 
 ---
@@ -320,7 +283,7 @@ Curious what these workflows look like with a different checkpoint instead of th
 
 **Comfy Cloud:** check the Model Library search first — many popular checkpoints are already pre-loaded, no import needed. If what you want isn't there, use Import and paste a Civitai or Hugging Face link, same as the ControlNet/IPAdapter models in Part 1 and 2 — only `.safetensors` files are accepted.
 
-**RunPod and Local:** browse [Civitai](https://civitai.com) (filter by Base Model: SD 1.5) or [Hugging Face](https://huggingface.co) for a checkpoint, download it, and place it in `models/checkpoints/`.
+**Local:** browse [Civitai](https://civitai.com) (filter by Base Model: SD 1.5) or [Hugging Face](https://huggingface.co) for a checkpoint, download it, and place it in `models/checkpoints/`.
 
 ---
 
@@ -328,7 +291,7 @@ Curious what these workflows look like with a different checkpoint instead of th
 
 **Comfy Cloud:** custom node installation is not self-service here yet — clicking Extensions just opens a "coming soon" waitlist dialog. This isn't a problem for this week's workflows since every node they use is already installed, but if you ever see a red node on Comfy Cloud, it won't be fixable by the steps below; ask in Discord instead.
 
-RunPod and Local: when you first load the workflows, some nodes may appear highlighted in red. This means required custom node packages are not yet installed.
+Local: when you first load the workflows, some nodes may appear highlighted in red. This means required custom node packages are not yet installed.
 
 To fix this:
 
@@ -363,4 +326,4 @@ You pasted a `.pth` or `.ckpt` link. Use the `_fp16.safetensors` versions linked
 Known for the IPAdapter model — Comfy Cloud guesses something else by default. Delete the import and redo it, manually choosing **IPAdapter** from the type dropdown this time (see Part 2).
 
 **Models are not showing in dropdowns after downloading or importing**
-Click the browser's refresh button on the ComfyUI tab. If still missing, open Manager and click Restart (RunPod/Local) or just reload the page (Comfy Cloud).
+Click the browser's refresh button on the ComfyUI tab. If still missing, open Manager and click Restart (Local) or just reload the page (Comfy Cloud).
