@@ -1142,7 +1142,7 @@
         "Node name for S&R": "VAELoader"
       },
       "widgets_values": [
-        "vae-ft-mse-840000-ema-pruned.ckpt"
+        "vae-ft-mse-840000-ema-pruned.safetensors"
       ],
       "color": "#332922",
       "bgcolor": "#593930"

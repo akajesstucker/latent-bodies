@@ -18,6 +18,7 @@ permalink: /notes/week-3/controlnet-and-ipadapter/
 | `control_v11f1p_sd15_depth_fp16.safetensors` | `models/controlnet/` | [Download](https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/resolve/main/control_v11f1p_sd15_depth_fp16.safetensors) |
 | `ip-adapter-plus_sd15.safetensors` | `models/ipadapter/` | [Download](https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors) |
 | `CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors` | `models/clip_vision/` | **Right-click → Save link as** — [Download](https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors) — then rename to `CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors` |
+| `vae-ft-mse-840000-ema-pruned.safetensors` | `models/vae/` | [Download](https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors) — you should already have this from Week 2; only redownload if yours is still the `.ckpt` version |
 | `Latent-Bodies_Snapshot-3_ControlNet-IPAdapter-WORKING.json` | `user/_manager/snapshots/` | [Download](https://github.com/akajesstucker/latent-bodies/blob/main/Latent-Bodies_Snapshot-3_ControlNet-IPAdapter-WORKING.json) |
 
 Workflow files (one pair per platform — Comfy Cloud and Local need different versions) are linked in Part 4.
@@ -38,6 +39,18 @@ This week introduces two techniques for guiding image and video generation with 
 - **IPAdapter** uses a reference image to transfer visual qualities — color palette, texture, style, mood — into the generation, without describing them in text.
 
 Both techniques require additional model files beyond the base checkpoint. This guide walks through getting all required models onto Comfy Cloud and local Windows setups.
+
+---
+
+## VAE (carried over from Week 2)
+
+This week's workflows use the same VAE as Week 2 — `vae-ft-mse-840000-ema-pruned.safetensors`. 
+
+**If you set up before this correction:** Week 2's guide originally linked to the `.ckpt` version of this file. If your `models/vae/` folder has `vae-ft-mse-840000-ema-pruned.ckpt` instead of the `.safetensors` version, download the safetensors version below and update the `Load VAE` node in this week's workflow to point to it.
+
+**Comfy Cloud:** already pre-loaded in the Model Library — no action needed.
+
+**Local:** [vae-ft-mse-840000-ema-pruned.safetensors](https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors) → `models/vae/`
 
 ---
 

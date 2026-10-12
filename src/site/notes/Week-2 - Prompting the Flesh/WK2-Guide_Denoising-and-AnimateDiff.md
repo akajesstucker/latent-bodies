@@ -37,7 +37,7 @@ The folder for each file is shown below.
 
 | File | Folder |
 |------|--------|
-| `vae-ft-mse-840000-ema-pruned.ckpt` | `models/vae/` |
+| `vae-ft-mse-840000-ema-pruned.safetensors` | `models/vae/` |
 | `AnimateLCM_sd15_t2v.ckpt` | `models/animatediff_models/` |
 | `v3_sd15_adapter.ckpt` | `models/loras/SD15/` |
 | `AnimateLCM_sd15_t2v_lora.safetensors` | `models/loras/SD15/` |
@@ -46,7 +46,7 @@ The folder for each file is shown below.
 
 Download each file by clicking the links below, then move each file to the folder shown in the table above, inside your `ComfyUI_windows_portable\ComfyUI\` directory.
 
-- [vae-ft-mse-840000-ema-pruned.ckpt](https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.ckpt)
+- [vae-ft-mse-840000-ema-pruned.safetensors](https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors)
 - [AnimateLCM_sd15_t2v.ckpt](https://huggingface.co/wangfuyun/AnimateLCM/resolve/main/AnimateLCM_sd15_t2v.ckpt)
 - [v3_sd15_adapter.ckpt](https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_adapter.ckpt)
 - [AnimateLCM_sd15_t2v_lora.safetensors](https://huggingface.co/wangfuyun/AnimateLCM/resolve/main/AnimateLCM_sd15_t2v_lora.safetensors)
