@@ -100,9 +100,11 @@ The final project is a short still and/or moving image work produced using the t
 
 ---
 
-## Cloud GPU Costs
+## Cloud Costs
 
-Students using cloud services rather than local hardware should budget approximately as follows. **RunPod** (pay-per-hour):
+Students using cloud services rather than local hardware should budget approximately as follows.
+
+**RunPod** (pay-per-hour):
 
 | Activity             | Estimated cost |
 | -------------------- | -------------- |
@@ -110,5 +112,11 @@ Students using cloud services rather than local hardware should budget approxima
 | LoRA training (WK4)  | $1.00–$2.00    |
 | Independent practice | ~$0.25–0.75/hr |
 
-**Comfy Cloud** (flat monthly subscription instead of hourly): the **Creator tier ($35/mo)** is what this course needs. One month's subscription covers the whole course, so you can subscribe any time during or after Session 1. See the setup guide for details.
+**Comfy Cloud** (flat monthly subscription instead of hourly):
+
+| Activity                           | Estimated cost |
+| ----------------------------------- | --------------- |
+| Creator tier, 1 month (covers the whole course) | $35 |
+
+One month's subscription covers the whole course, so you can subscribe any time during or after Session 1. See the setup guide for details.
 
