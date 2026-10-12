@@ -4,7 +4,7 @@
 
 [build.environment]
   SITE_NAME_HEADER = "Latent Bodies"
-  SITE_BASE_URL = "https://fabulous-truffle-36a33f.netlify.app"
+  SITE_BASE_URL = "https://latentbodies.netlify.app"
   dgShowFileTree = "true"
   dgEnableSearch = "true"
 
