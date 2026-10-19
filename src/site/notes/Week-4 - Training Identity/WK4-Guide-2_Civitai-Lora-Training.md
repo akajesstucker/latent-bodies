@@ -80,8 +80,8 @@ Log in and check your Buzz balance under your profile icon. Select 'Buy Buzz'
 ## Step 4: Start a Training Job
 
 1. Log in to civitai.com
-2. Click your profile icon (bottom right) and select **Training** from the menu
-3. Click **New training**
+2. Go to the **Create** menu and select **Train a LoRA**
+3. Click **+ New Training**
 
 ---
 
